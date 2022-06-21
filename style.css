@@ -1,0 +1,440 @@
+body
+{
+	padding: 0;
+	margin: 0;
+	background: #c75d0e;
+	font-family: Helvetica, sans-serif;
+}
+
+.container
+{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+
+.row
+{
+	width: 80%;
+	display: grid;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.content
+{
+	width: 600px;
+	margin: 0 auto;
+}
+
+.alllevels
+{
+	width: 750px;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.level img {
+	border-radius: 15%;
+	padding: 5px;
+}
+
+.level
+{
+	width: 140px;
+	height: 125px;
+	margin: 5px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+}
+
+#headerarea, #cardbox
+{
+	display: none;
+}
+
+#h1
+{
+	color: #f6e9d9;
+	text-align: center;
+	font-size: 40px;
+	margin-top: 0px;
+	font-weight: bolder;
+	letter-spacing: 3px;
+	word-spacing: 7px;
+	text-shadow: 3px 3px 2px
+	rgba(255,255,255,0.5 );
+	padding-top: 20px;
+}
+
+#h3
+{
+	color: #305a79;
+	text-align: center;
+	margin-top: 0px;
+	font-weight: bolder;
+	letter-spacing: 3px;
+	word-spacing: 7px;
+	text-shadow: 3px 3px 2px
+	rgba(255,255,255,0.5 );
+	padding-top: 20px;
+}
+
+#rules {
+	color: #f6e9d9;
+	text-align: center;
+}
+
+#updates
+{
+	color: #f2f2f2;
+	width: 100%;
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#timer
+{
+	font-size: 20px;
+	float: left;
+	margin: 0 20px;
+	text-shadow: 1.5px 1.5px 1px rgba(255,255,255,0.5);
+}
+
+#score
+{
+	float: right;
+	margin: 0 20px;
+	text-shadow: 1.5px 1.5px 1px rgba(255,255,255,0.5);	
+}
+
+.reset
+{
+	width: 100%;
+	text-align: center;
+	margin: 0 0 15px;
+}
+
+#new
+{
+	color:black;
+	background-color: #3e83a4;
+	font-size: 15px;
+	text-shadow: 2px 2px 2px rgba(94,119,115,0.82 );
+	padding: 5px;
+	box-shadow: 1.5px 1.5px 1px rgba(255,255,255,0.5 );
+	border: 1px solid grey;
+}
+
+#new:hover
+{
+	cursor: pointer;
+	background-color: beige;
+}
+
+.cardbox
+{
+	width: 600px;
+	margin: 0 auto;
+}
+
+.numberofclicks
+{
+	text-align: center;
+}
+
+.numberofclicks h2
+{
+	margin: 0;
+	color: #fff;
+}
+
+.cards
+{
+	background: url("images/back.png") no-repeat;
+	background-size: cover;
+	width: 140px;
+	height: 225px;
+	margin: 5px;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+}
+
+.cards img
+{
+	padding: 5px;
+}
+
+#opacityDiv, #result
+{
+	display: none;
+}
+
+#opacityDiv
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.60;
+	z-index: 10;
+}
+
+#result
+{
+	z-index: 10;
+	position: absolute;
+	width: 30%;
+	height: auto;
+	padding: 2px;
+	left: 50%;
+	margin-left: -15%;
+	border: 2px solid #31192d;
+	border-radius: 15px;
+	border-style: solid;
+	border-width: 2px 2px 0px 2px;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+
+#popBody
+{
+	background-color: white;
+	height: 250px;
+	padding: 20px;
+	text-align: center;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+
+#levelImg {
+	position: relative;
+	top: 10px;
+	padding: 20px auto;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	border-radius: 15%;
+}
+
+#levelImg img {
+	border-radius: 15%;
+}
+
+#h1Res {
+	margin: 0;
+	font-family: cursive;
+	text-align: center;
+	color: #31192d;
+}
+
+#pRes {
+	color: #31192d;
+	text-align: center;
+	font-size: 20px;
+}
+
+#popBtn {
+	height: 100px;
+	background-color: #f5b31b;
+	padding: 25px auto;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	border-style: solid;
+	border-width: 0px 0px 0px 0px;
+	border-color: #511519;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+#okayBtn button {
+	height: 50px;
+	width: 95px;
+	margin: 0px auto;
+	text-align: center;
+	font-size: 18px;
+	background-color: #4d0000;
+	color: white;
+	box-shadow: 0px 2px 2px 0.5px rgba(0,0,0,0.5);
+	border: none;
+	text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+	cursor: pointer;
+	border-radius: 5px;
+	outline: none;
+}
+
+@media only screen and (max-width: 450px) {
+	.row
+	{
+		width: 95%;
+		padding: 20px 5px;
+	}
+	.alllevels
+	{
+		width: 100%;
+	}
+	.content
+	{
+		width: 100%;
+	}
+	.cardbox
+	{
+		width: 100%;
+	}
+	.cards
+	{
+		width: 91px;
+		height: 147px;
+	}
+	.cards img
+	{
+		padding: 2px;
+		width: 86px;
+		height: 141px;
+	}
+	.level
+	{
+		width: 90px;
+		height: 90px;
+	}
+	.level img
+	{
+		padding: 2px;
+		width: 86px;
+		height: 86px;
+	}
+	#result
+	{
+		width: 90%;
+		margin-left: -45%;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.row
+	{
+		width: 95%;
+		padding: 20px 5px;
+	}
+	.cardbox
+	{
+		width: 100%;
+	}
+	.cards
+	{
+		width: 87px;
+		height: 140px;
+	}
+	.cards img
+	{
+		width: 83px;
+		height: 136px;
+	}
+	.level
+	{
+		width: 87px;
+		height: 87px;
+	}
+	.level img
+	{
+		width: 87px;
+		height: 87px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.cards
+	{
+		width: 82px;
+		height: 132px;
+	}
+	.cards img
+	{
+		width: 77px;
+		height: 127px;
+	}
+	.level
+	{
+		width: 82px;
+		height: 82px;
+	}
+	.level img
+	{
+		width: 77px;
+		height: 77px;
+	}
+}
+
+@media only screen and (max-width: 390px) {
+	.cards
+	{
+		width: 80px;
+		height: 130px;
+	}
+	.level
+	{
+		width: 80px;
+		height: 80px;
+	}
+}
+
+@media only screen and (max-width: 380px) {
+	.row
+	{
+		width: 95%;
+		padding: 20px 2px;
+	}
+	.cardbox
+	{
+		width: 100%;
+	}
+	.cards
+	{
+		width: 79px;
+		height: 128px;
+	}
+	.cards img
+	{
+		width: 75px;
+		height: 124px;
+	}
+	.level
+	{
+		width: 79px;
+		height: 79px;
+	}
+	.level img
+	{
+		width: 75px;
+		height: 75px;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.cards
+	{
+		width: 75px;
+		height: 125px;
+	}
+	.cards img
+	{
+		width: 71px;
+		height: 122px;
+	}
+	.level
+	{
+		width: 75px;
+		height: 75px;
+	}
+	.level img
+	{
+		width: 75px;
+		height: 75px;
+	}
+}
